@@ -27,48 +27,63 @@ Algorithm:
 
 <table border="1">
     <tr>
-        <th>01: <p><b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</p></th>
+        <th>01: </th>
+        <th><p><b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</p></th>
     </tr>
     <tr>
-        <td>02: <p style="padding-left: 30px;"><i>E(0)</i> = initialEnergy(<i>G, K</i>)</p></td>
+        <td>02: </td>
+        <td><p style="padding-left: 30px;"><i>E(0)</i> = initialEnergy(<i>G, K</i>)</p></td>
     </tr>
     <tr>
-        <td>03: <p style="padding-left: 30px;"><i>P(0)</i> = initialParticle: Setting initial positions of the <i>K</i> particles</p></td>
+        <td>03: </td>
+        <td><p style="padding-left: 30px;"><i>P(0)</i> = initialParticle: Setting initial positions of the <i>K</i> particles</p></td>
     </tr>
     <tr>
-        <td>04: <p style="padding-left: 30px;"><i>t = 1</i></p></td>
+        <td>04: </td>
+        <td><p style="padding-left: 30px;"><i>t = 1</i></p></td>
     </tr>
     <tr>
-        <td>05: <p style="padding-left: 30px;"><b>while</b> <i>t &lt; T</i> and <i>||E(t) - E(t-1)|| &ge; &Epsilon; </i></p></td>
+        <td>05: </td>
+        <td><p style="padding-left: 30px;"><b>while</b> <i>t &lt; T</i> and <i>||E(t) - E(t-1)|| &ge; &Epsilon; </i></p></td>
     </tr>
     <tr>
-        <td>06: <p style="padding-left: 60px;"><b>for</b> <i>k = 1</i> to <i>K</i></p></td>
+        <td>06: </td>
+        <td><p style="padding-left: 60px;"><b>for</b> <i>k = 1</i> to <i>K</i></p></td>
     </tr>
     <tr>
-        <td>07: <p style="padding-left: 90px;">propagationSignal(<i>G, E(k)</i>)</p></td>
+        <td>07: </td>
+        <td><p style="padding-left: 90px;">propagationSignal(<i>G, E(k)</i>)</p></td>
     </tr>
     <tr>
-        <td>08: <p style="padding-left: 90px;">checkEnergy(<i>G, E(k)</i>)</p></td>
+        <td>08: </td>
+        <td><p style="padding-left: 90px;">checkEnergy(<i>G, E(k)</i>)</p></td>
     </tr>
     <tr>
-        <td>09: <p style="padding-left: 90px;">calculate_<i>P_rand</i></p></td>
+        <td>09: </td>
+        <td><p style="padding-left: 90px;">calculate_<i>P_rand</i></p></td>
     </tr>
     <tr>
-        <td>10: <p style="padding-left: 90px;">calculate_<i>P_pref</i></p></td>
+        <td>10: </td>
+        <td><p style="padding-left: 90px;">calculate_<i>P_pref</i></p></td>
     </tr>
     <tr>
-        <td>11: <p style="padding-left: 90px;">selectnode(<i>G, K, P_rand, P_pref</i>)</p></td>
+        <td>11: </td>
+        <td><p style="padding-left: 90px;">selectnode(<i>G, K, P_rand, P_pref</i>)</p></td>
     </tr>
     <tr>
-        <td>12: <p style="padding-left: 60px;"><b>end</b> for <i>k</i></p></td>
+        <td>12: </td>
+        <td><p style="padding-left: 60px;"><b>end</b> for <i>k</i></p></td>
     </tr>
     <tr>
-        <td>13: <p style="padding-left: 30px;"><i>t = t + 1</i></p></td>
+        <td>13: </td>
+        <td><p style="padding-left: 30px;"><i>t = t + 1</i></p></td>
     </tr>
     <tr>
-        <td>14: <p style="padding-left: 30px;"><b>end while</b></p></td>
+        <td>14: </td>
+        <td><p style="padding-left: 30px;"><b>end while</b></p></td>
     </tr>
     <tr>
-        <td>15: <p><b>end procedure</b></p></td>
+        <td>15: </td>
+        <td><p><b>end procedure</b></p></td>
     </tr>
 </table>
