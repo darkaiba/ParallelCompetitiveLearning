@@ -32,7 +32,7 @@ Algorithm:
     </tr>
     <tr>
         <td>02: </td>
-        <td style="padding-left: 30px;"><i>E(0)</i> = initialEnergy(<i>G, K</i>)</td>
+        <td>&nbsp;<i>E(0)</i> = initialEnergy(<i>G, K</i>)</td>
     </tr>
     <tr>
         <td>03: </td>
