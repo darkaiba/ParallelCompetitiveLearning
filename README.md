@@ -1,0 +1,73 @@
+<h1 align="center">Parallel Competitive Learning</h1>
+
+Overview:
+=================
+
+<p align="center">The proposed model is inspired by two unsupervised learning techniques. The first is the particle competition, in which the particles travel through the network trying to dominate as many nodes as possible while repelling the opposing particles. The second mechanism is a parallel signal propagation inspired by SOM.</p>
+<p align="center">In summary, the new methodology works as follows: (1) all the elements of the energy matrix are initialized with the established minimum value. (2) The initial positions of the particles are defined at the nodes with the greatest measure of proximity centrality. (3) At each iteration, particles propagate their energy in two ways: only for the visited node constituting sequential processing, and for all neighbors of the visited node to perform parallel processing. In both cases, the energy level of the actual particle at the nodes is increased and the energy level of rival particles is decreased. (4) Check each element of the energy matrix. If any of them have an energy value below the stated minimum, set it back to that value. (5) Each particle selects a neighboring node to visit according to walking probability. (6) This process is repeated until the system converges. </p>
+<!--
+<p align="center">Figure below, illustrates the description of the method detection process.</p>
+<img src="imagem.jpg" alt="Illustrates the process description of the proposed method. (a) - Particle initial position at a node with the greatest measure of proximity centrality. (b) - Energy propagation in the visited node. (c) - Energy propagation to the neighbors of the visited node. (d) - Choose a new node to visit and do the process again.">
+-->
+Algorithm:
+=================
+<!--ts-->
+    The main steps of the algorithm's iteration procedure are explained below.
+      Step 01: Input parameters are presented. In the case of weighted networks and/or graphs, set weight = TRUE; otherwise, weight = FALSE.
+      Step 02: All elements of the energy matrix are initialized with the value E_min.
+      Step 03: The initial positions of the K particles are defined at the nodes V with the greatest measure of proximity centrality.
+      Step 05: Run the process up to a predefined limit value, or until the energy matrix converges.
+      Step 07: Each of the K particles propagates the signal and updates the energy matrix.
+      Step 08: Check each element of the energy matrix. If any of them have an energy value below E_min, set it back to E_min.
+      Step 09: Calculation of the random walk transition matrix.
+      Step 10: Calculation of the preferential walk transition matrix.
+      Step 11: Select the next node by the combined rule of the random and preferential walk.
+<!--te-->
+
+<table border="1">
+    <tr>
+        <th>01: <b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</th>
+    </tr>
+    <tr>
+        <td>02: <p style="padding-left: 30px;"><i>E(0)</i> = initialEnergy(<i>G, K</i>)</p></td>
+    </tr>
+    <tr>
+        <td>03: <p style="padding-left: 30px;"><i>P(0)</i> = initialParticle: Setting initial positions of the <i>K</i> particles</p></td>
+    </tr>
+    <tr>
+        <td>04: <p style="padding-left: 30px;"><i>t = 1</i></p></td>
+    </tr>
+    <tr>
+        <td>05: <p style="padding-left: 30px;"><b>while</b> <i>t &lt; T</i> and <i>||E(t) - E(t-1)|| &ge; &Epsilon; </i></p></td>
+    </tr>
+    <tr>
+        <td>06: <p style="padding-left: 60px;"><b>for</b> <i>k = 1</i> to <i>K</i></p></td>
+    </tr>
+    <tr>
+        <td>07: <p style="padding-left: 90px;">propagationSignal(<i>G, E(k)</i>)</p></td>
+    </tr>
+    <tr>
+        <td>08: <p style="padding-left: 90px;">checkEnergy(<i>G, E(k)</i>)</p></td>
+    </tr>
+    <tr>
+        <td>09: <p style="padding-left: 90px;">calculate_<i>P_rand</i></p></td>
+    </tr>
+    <tr>
+        <td>10: <p style="padding-left: 90px;">calculate_<i>P_pref</i></p></td>
+    </tr>
+    <tr>
+        <td>11: <p style="padding-left: 90px;">selectnode(<i>G, K, P_rand, P_pref</i>)</p></td>
+    </tr>
+    <tr>
+        <td>12: <p style="padding-left: 60px;"><b>end</b> for <i>k</i></p></td>
+    </tr>
+    <tr>
+        <td>13: <p style="padding-left: 30px;"><i>t = t + 1</i></p></td>
+    </tr>
+    <tr>
+        <td>14: <p style="padding-left: 30px;"><b>end while</b></p></td>
+    </tr>
+    <tr>
+        <td>15: <b>end procedure</b></td>
+    </tr>
+</table>
