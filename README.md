@@ -32,55 +32,55 @@ Algorithm:
     </tr>
     <tr>
         <td>02: </td>
-        <td>&nbsp;&nbsp;&nbsp;<i>E(0)</i> = initialEnergy(<i>G, K</i>)</td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>E(0)</i> = initialEnergy(<i>G, K</i>)</td>
     </tr>
     <tr>
         <td>03: </td>
-        <td><p style="padding-left: 30px;"><i>P(0)</i> = initialParticle: Setting initial positions of the <i>K</i> particles</p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>P(0)</i> = initialParticle: Setting initial positions of the <i>K</i> particles</td>
     </tr>
     <tr>
         <td>04: </td>
-        <td><p style="padding-left: 30px;"><i>t = 1</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>t = 1</i></td>
     </tr>
     <tr>
         <td>05: </td>
-        <td><p style="padding-left: 30px;"><b>while</b> <i>t &lt; T</i> and <i>||E(t) - E(t-1)|| &ge; &Epsilon; </i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>while</b> <i>t &lt; T</i> and <i>||E(t) - E(t-1)|| &ge; &Epsilon; </i></td>
     </tr>
     <tr>
         <td>06: </td>
-        <td><p style="padding-left: 60px;"><b>for</b> <i>k = 1</i> to <i>K</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> <i>k = 1</i> to <i>K</i></td>
     </tr>
     <tr>
         <td>07: </td>
-        <td><p style="padding-left: 90px;">propagationSignal(<i>G, E(k)</i>)</p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;propagationSignal(<i>G, E(k)</i>)</td>
     </tr>
     <tr>
         <td>08: </td>
-        <td><p style="padding-left: 90px;">checkEnergy(<i>G, E(k)</i>)</p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;checkEnergy(<i>G, E(k)</i>)</td>
     </tr>
     <tr>
         <td>09: </td>
-        <td><p style="padding-left: 90px;">calculate_<i>P_rand</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculate_<i>P_rand</i></td>
     </tr>
     <tr>
         <td>10: </td>
-        <td><p style="padding-left: 90px;">calculate_<i>P_pref</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;calculate_<i>P_pref</i></td>
     </tr>
     <tr>
         <td>11: </td>
-        <td><p style="padding-left: 90px;">selectnode(<i>G, K, P_rand, P_pref</i>)</p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;selectnode(<i>G, K, P_rand, P_pref</i>)</td>
     </tr>
     <tr>
         <td>12: </td>
-        <td><p style="padding-left: 60px;"><b>end</b> for <i>k</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>end</b> for <i>k</i></td>
     </tr>
     <tr>
         <td>13: </td>
-        <td><p style="padding-left: 30px;"><i>t = t + 1</i></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>t = t + 1</i></td>
     </tr>
     <tr>
         <td>14: </td>
-        <td><p style="padding-left: 30px;"><b>end while</b></p></td>
+        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>end while</b></td>
     </tr>
     <tr>
         <td>15: </td>
