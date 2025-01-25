@@ -27,8 +27,8 @@ Algorithm:
 
 <table border="1">
     <tr>
-        <th>01: </th>
-        <th><p><b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</p></th>
+        <td>01: </td>
+        <td><p><b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</p></td>
     </tr>
     <tr>
         <td>02: </td>
