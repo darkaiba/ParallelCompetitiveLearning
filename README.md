@@ -27,7 +27,7 @@ Algorithm:
 
 <table border="1">
     <tr>
-        <th>01: <b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</th>
+        <th>01: <p><b>procedure</b> ParallelCompetition(<i>G, K, T</i>)</p></th>
     </tr>
     <tr>
         <td>02: <p style="padding-left: 30px;"><i>E(0)</i> = initialEnergy(<i>G, K</i>)</p></td>
@@ -69,6 +69,6 @@ Algorithm:
         <td>14: <p style="padding-left: 30px;"><b>end while</b></p></td>
     </tr>
     <tr>
-        <td>15: <b>end procedure</b></td>
+        <td>15: <p><b>end procedure</b></p></td>
     </tr>
 </table>
