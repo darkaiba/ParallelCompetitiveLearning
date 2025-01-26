@@ -88,4 +88,4 @@ Algorithm:
     </tr>
 </table>
 
-<p align="justify"><h3>For complete project information, visit:<a href="https://www.teses.usp.br/teses/disponiveis/59/59143/tde-01072022-152719/pt-br.php">here</a></h3></p>
+<p align="justify"><h3>For complete project information, visit: <a href="https://www.teses.usp.br/teses/disponiveis/59/59143/tde-01072022-152719/pt-br.php">here</a></h3></p>
