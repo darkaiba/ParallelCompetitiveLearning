@@ -87,3 +87,5 @@ Algorithm:
         <td><p><b>end procedure</b></p></td>
     </tr>
 </table>
+
+<p align="justify"><h3>For complete project information, visit:</h3><a href="https://www.teses.usp.br/teses/disponiveis/59/59143/tde-01072022-152719/pt-br.php">here</a></p>
