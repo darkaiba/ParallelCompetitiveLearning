@@ -5,10 +5,10 @@ Overview:
 
 <p align="justify">The proposed model is inspired by two unsupervised learning techniques. The first is the particle competition, in which the particles travel through the network trying to dominate as many nodes as possible while repelling the opposing particles. The second mechanism is a parallel signal propagation inspired by SOM.</p>
 <p align="justify">In summary, the new methodology works as follows: (1) all the elements of the energy matrix are initialized with the established minimum value. (2) The initial positions of the particles are defined at the nodes with the greatest measure of proximity centrality. (3) At each iteration, particles propagate their energy in two ways: only for the visited node constituting sequential processing, and for all neighbors of the visited node to perform parallel processing. In both cases, the energy level of the actual particle at the nodes is increased and the energy level of rival particles is decreased. (4) Check each element of the energy matrix. If any of them have an energy value below the stated minimum, set it back to that value. (5) Each particle selects a neighboring node to visit according to walking probability. (6) This process is repeated until the system converges. </p>
-<!--
+
 <p align="center">Figure below, illustrates the description of the method detection process.</p>
-<img src="imagem.jpg" alt="Illustrates the process description of the proposed method. (a) - Particle initial position at a node with the greatest measure of proximity centrality. (b) - Energy propagation in the visited node. (c) - Energy propagation to the neighbors of the visited node. (d) - Choose a new node to visit and do the process again.">
--->
+<img src="img/image.png" alt="Illustrates the process description of the proposed method. (a) - Particle initial position at a node with the greatest measure of proximity centrality. (b) - Energy propagation in the visited node. (c) - Energy propagation to the neighbors of the visited node. (d) - Choose a new node to visit and do the process again.">
+
 
 Algorithm:
 =================
