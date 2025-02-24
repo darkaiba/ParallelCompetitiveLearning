@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import igraph as ig
-from ParallelCompetitive.ParallelCompetitve import *
+from ParallelCompetitive import *
 import random
 import community as com
 from scipy.cluster import hierarchy
